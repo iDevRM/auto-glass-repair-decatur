@@ -1,0 +1,129 @@
+:root{
+  --ink:#0e1a24; --steel:#1c2c3a; --red:#d7382c; --red-dk:#b52c22;
+  --amber:#ffb703; --light:#f2f5f7; --white:#fff; --muted:#56656f;
+  --line:#dde4e9; --shadow:0 6px 24px rgba(14,26,36,.11);
+}
+*{box-sizing:border-box}
+body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  color:var(--steel);background:var(--white);line-height:1.65;font-size:17px;-webkit-font-smoothing:antialiased}
+img{max-width:100%;height:auto;display:block}
+a{color:var(--red)}
+.wrap{max-width:1120px;margin:0 auto;padding:0 20px}
+
+/* NAV */
+.nav{position:sticky;top:0;z-index:50;background:var(--ink);border-bottom:3px solid var(--red)}
+.nav-inner{max-width:1120px;margin:0 auto;padding:12px 20px;display:flex;align-items:center;gap:18px;flex-wrap:wrap}
+.brand{color:var(--white);font-weight:800;font-size:19px;letter-spacing:-.3px;text-decoration:none;line-height:1.2}
+.brand span{color:var(--amber)}
+.nav-links{display:flex;gap:20px;margin-left:auto;flex-wrap:wrap}
+.nav-links a{color:#c9d3da;text-decoration:none;font-size:15px;font-weight:600}
+.nav-links a:hover{color:var(--amber)}
+.nav-cta{background:var(--red);color:var(--white);text-decoration:none;font-weight:800;font-size:15px;
+  padding:10px 18px;border-radius:6px;white-space:nowrap}
+.nav-cta:hover{background:var(--red-dk)}
+
+/* HERO + QUOTE FORM */
+.hero{background:var(--ink);padding:44px 0 48px}
+.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:44px;align-items:start}
+.hero-copy h1{color:var(--white);font-size:38px;line-height:1.15;margin:0 0 14px;font-weight:800;letter-spacing:-.6px}
+.hero-copy p.hero-sub{color:#d6dee4;font-size:18px;margin:0 0 22px}
+.eyebrow{display:inline-block;background:var(--amber);color:var(--ink);font-weight:800;font-size:12px;
+  letter-spacing:1.2px;text-transform:uppercase;padding:5px 12px;border-radius:4px;margin-bottom:14px}
+.hero-points{list-style:none;padding:0;margin:22px 0 0}
+.hero-points li{color:#b9c4cd;font-size:15px;padding-left:24px;position:relative;margin-bottom:9px}
+.hero-points li:before{content:"\2713";position:absolute;left:0;color:var(--amber);font-weight:800}
+.hero-form{background:var(--white);border-radius:12px;padding:24px;box-shadow:0 10px 34px rgba(0,0,0,.36);
+  border-top:5px solid var(--red)}
+.hero-form h2{font-size:21px;margin:0 0 4px;color:var(--ink);font-weight:800;letter-spacing:-.2px}
+.hero-form .form-note{font-size:14px;color:var(--muted);margin:0 0 16px}
+.hero-form label{font-size:14px;margin-bottom:4px}
+.hero-form input,.hero-form select{margin-bottom:12px;padding:10px 12px;font-size:15px}
+.hero-form button{width:100%;padding:14px 20px;font-size:16px}
+.form-alt{text-align:center;font-size:14px;color:var(--muted);margin:12px 0 0}
+.form-alt a{font-weight:700}
+.hero-band{line-height:0;background:var(--ink)}
+.hero-band img{width:100%;height:340px;object-fit:cover}
+
+.btn{display:inline-block;background:var(--red);color:var(--white);text-decoration:none;font-weight:800;
+  padding:14px 24px;border-radius:6px;font-size:16px;border:2px solid var(--red)}
+.btn:hover{background:var(--red-dk);border-color:var(--red-dk)}
+.btn-ghost{background:transparent;color:var(--white);border:2px solid rgba(255,255,255,.55)}
+
+/* SECTIONS */
+.section{padding:56px 0}
+.section.alt{background:var(--light)}
+.section h2{font-size:28px;line-height:1.25;margin:0 0 16px;color:var(--ink);font-weight:800;letter-spacing:-.4px}
+.section h3{font-size:19px;margin:26px 0 8px;color:var(--ink);font-weight:700}
+.section p{margin:0 0 16px}
+.lead{font-size:19px;color:var(--muted)}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:36px;align-items:start}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.card{background:var(--white);border:1px solid var(--line);border-radius:10px;padding:22px;box-shadow:var(--shadow)}
+.card h3{margin-top:0}
+.figure{border-radius:10px;overflow:hidden;box-shadow:var(--shadow)}
+ul.checks{list-style:none;padding:0;margin:0 0 16px}
+ul.checks li{padding-left:26px;position:relative;margin-bottom:10px}
+ul.checks li:before{content:"\2713";position:absolute;left:0;color:var(--red);font-weight:800}
+
+/* VERDICT BOX — repair vs replace */
+.verdict{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin:0 0 18px}
+.verdict > div{border-radius:10px;padding:20px;border:2px solid var(--line);background:var(--white)}
+.verdict .ok{border-color:#2e7d32}
+.verdict .no{border-color:var(--red)}
+.verdict h3{margin-top:0}
+
+table.price{width:100%;border-collapse:collapse;margin:0 0 16px;background:var(--white);
+  border:1px solid var(--line);border-radius:10px;overflow:hidden;font-size:16px}
+table.price th{background:var(--ink);color:var(--white);text-align:left;padding:12px 14px;font-size:14px;
+  letter-spacing:.4px;text-transform:uppercase}
+table.price td{padding:12px 14px;border-top:1px solid var(--line)}
+table.price tr:nth-child(even) td{background:var(--light)}
+.table-scroll{overflow-x:auto}
+
+.band{background:var(--ink);color:var(--white);padding:44px 0;text-align:center}
+.band h2{color:var(--white);margin-bottom:10px}
+.band p{color:#c4ced6;max-width:620px;margin:0 auto 22px}
+.btn-row{display:flex;gap:12px;flex-wrap:wrap}
+
+.faq h3{font-size:18px;margin:24px 0 6px;color:var(--ink)}
+.faq p{margin:0 0 4px}
+
+/* SERVICES GRID */
+.svc-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.svc-card{background:var(--white);border:1px solid var(--line);border-radius:10px;overflow:hidden;
+  box-shadow:var(--shadow);display:flex;flex-direction:column}
+.svc-card img{width:100%;height:160px;object-fit:cover}
+.svc-card .svc-body{padding:16px 18px 18px;display:flex;flex-direction:column;flex:1}
+.svc-card h3{margin:0 0 8px;font-size:17px;color:var(--ink);font-weight:700}
+.svc-card p{font-size:14.5px;color:var(--muted);margin:0 0 14px;flex:1}
+.svc-card a.svc-link{font-weight:700;font-size:14.5px;color:#2563eb;text-decoration:underline}
+
+/* FOOTER */
+.footer{background:var(--ink);color:#9aa8b3;padding:40px 0 28px;font-size:15px}
+.footer a{color:var(--amber);text-decoration:none}
+.footer h4{color:var(--white);font-size:16px;margin:0 0 10px}
+.foot-grid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:30px;margin-bottom:26px}
+.foot-bottom{border-top:1px solid #24333f;padding-top:18px;font-size:14px}
+
+form label{display:block;font-weight:700;margin-bottom:6px;font-size:15px;color:var(--ink)}
+form input,form select,form textarea{width:100%;padding:12px 14px;border:1px solid var(--line);
+  border-radius:6px;font-size:16px;font-family:inherit;margin-bottom:16px;background:var(--white);color:var(--steel)}
+form button{background:var(--red);color:var(--white);border:0;padding:14px 28px;border-radius:6px;
+  font-size:17px;font-weight:800;cursor:pointer;font-family:inherit}
+form button:hover{background:var(--red-dk)}
+
+@media(max-width:980px){ .svc-grid{grid-template-columns:1fr 1fr} }
+@media(max-width:860px){
+  .grid2,.grid3,.foot-grid,.verdict,.hero-grid{grid-template-columns:1fr}
+  .hero-grid{gap:30px}
+  .hero-copy h1{font-size:29px}
+  .hero-band img{height:220px}
+  .svc-grid{grid-template-columns:1fr}
+  .nav-links{order:3;margin-left:0;width:100%;gap:16px}
+  .nav-cta{margin-left:auto}
+  .section{padding:40px 0}
+}
+
+/* repair-vs-replace box: green ticks on the left, red crosses on the right */
+.verdict .ok ul.checks li:before{content:"\2713";color:#2e7d32}
+.verdict .no ul.checks li:before{content:"\2717";color:var(--red)}
